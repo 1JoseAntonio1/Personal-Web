@@ -1,0 +1,112 @@
+<div class="nav">
+  <div class="contenedor navbar">
+    <h1 class="logo"><span>J</span>ose <span>A</span>ntonio <span>BC</span></h1>
+    <div id="menu">
+      <ul class="nav_orde">
+        <li><a data-scroll href="#acerca_de_mi" >Acerca de mi</a></li>
+        <li><a data-scroll href="#habilidades">Habilidades</a></li>
+        <li><a data-scroll href="#proyectos">Proyectos</a></li>
+        <li><a data-scroll href="#contactame">Contactame</a></li>
+      </ul>
+    </div>
+
+    <div (click)="desplegarMenu()" class="nav_mov" id="nav_mov">
+        <span></span>
+    </div>
+  </div>
+  <div class="contenedor">
+    <div class="presentacion">
+      <div class="presentacion_centrar">
+        <div class="foto efecto_scroll_entrada_izq">
+          <img src="./../../../../assets/images/perfil.png">
+        </div>
+        <div class="info">
+          <div class="texto">
+            <div class="efecto_scroll_entrada_arb">
+              <ngx-typed-js class="" [strings]="['Hola Mundo,', 'Hello World,']" [loop]="true" [smartBackspace]="false" [startDelay]="2000" [backDelay]="2500" [backSpeed]="75" [typeSpeed]="100" [showCursor]="true" [cursorChar]="'|'" >
+                <p class="typing"></p>
+              </ngx-typed-js>
+            </div>
+            <p class="efecto_scroll_entrada_arb">Soy <span class="nombre">Jose</span>, un joven apasionado Frontend Developer</p>
+          </div>
+          <div class="botones">
+            <div class="boton btn_uno efecto_scroll_entrada_izq">
+              <a data-scroll href="#acerca_de_mi">
+                <span></span>
+                <span></span>
+                <span></span>
+                Sobre Mi
+              </a>
+            </div>
+            <div class="boton btn_dos efecto_scroll_entrada_drh">
+              <a href="./../../../../assets/data/download/CV_JoseAntonioBlazquez.pdf" download="CV_JoseAntonioBlazquezCabra.pdf">
+                <span></span>
+                <span></span>
+                <span></span>
+                Descargar CV
+              </a>
+            </div>
+          </div>
+          <div class="redes">
+            <a class="efecto_scroll_entrada_izq delay" href="https://www.instagram.com">
+              <div class="layer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="span_img"><img src="./../../../../assets/images/instagram_logo.png"></span>
+              </div>
+              <div class="text">Instagram</div>
+            </a>
+            <a class="efecto_scroll_entrada_izq" href="https://www.linkedin.com/in/jose-antonio-blazquez-cabra-2baa25aa/">
+              <div class="layer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="span_img"><img src="./../../../../assets/images/linkedin_logo.png"></span>
+              </div>
+              <div class="text">Linkedin</div>
+            </a>
+            <a class="efecto_scroll_entrada_drh" href="https://twitter.com">
+              <div class="layer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="span_img"><img src="./../../../../assets/images/twitter_logo.png"></span>
+              </div>
+              <div class="text">Twitter</div>
+            </a>
+            <a class="efecto_scroll_entrada_drh delay" href="https://github.com/1JoseAntonio1">
+              <div class="layer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="span_img"><img src="./../../../../assets/images/github_logo.png"></span>
+              </div>
+              <div class="text">GitHub</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wave"></div>
+  <div class="go_top no_show" (click)="go_top()">
+      <img src="./../../../../assets/images/go_top.png">
+  </div>
+</div>
+
+<div class="relleno"></div>
+
+
+
+
+
+
+
+
+

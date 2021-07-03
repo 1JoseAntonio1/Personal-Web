@@ -1,0 +1,19 @@
+<div class="section" id="proyectos">
+  <div>
+    <div class="titulo">
+      <h1 class="efecto_scroll_titulo">Proyectos</h1>
+    </div>
+    <div class="proyectos">
+      <swiper [config]="config" [(index)]="index" >
+        <div *ngFor="let proyecto of InfoProyectos">
+          Swiper slide content
+        </div>
+      </swiper>
+    </div>
+  </div>
+</div>
+
+<div class="relleno">
+  <div class="linea_relleno"></div>
+  <div class="color_relleno"></div>
+</div>

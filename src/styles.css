@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  font-size: 10px;
+  font-family: "Roboto Cn", sans-serif;
+  overflow-x: hidden;
+}
+
+/*--Contenedor--*/
+.contenedor{
+  max-width: 1500px;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px){
+  .contenedor{
+    width: 95%;
+  }
+}
+
+@media (max-width: 725px){
+
+}
+/*------------*/
+
+/*--Relleno--*/
+.relleno{
+  width: 100%;
+  height: 25vh;
+  min-height: 150px;
+}
+/*------------*/
+
+/*--efectos--*/
+.fade-In{
+  animation: fadeIn 3s;
+}
+
+.show{
+  display: block;
+  animation: fadeIn 2s;
+}
+
+.no_show{
+  display: none;
+}
+/*-------*/
+
+
+/*--Animaciones--*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+/*--------*/
+
+/*-----EFECTOS-----*/
+
+/* Efecto Titulo (h1) */
+.efecto_scroll_titulo{
+  position: relative;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.efecto_scroll_titulo:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #575757;
+  transform-origin: right;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+
+.efecto_scroll_titulo.active_titu{
+  transform: scaleX(1);
+  transition-delay: 0s;
+}
+
+.efecto_scroll_titulo.active_titu:before{
+  transform: scaleX(0);
+  transition-delay: 0.5s;
+}
+/* ------- */
+
+/* Efecto Entrada Izquierda / Derecha / Opacidad*/
+.efecto_scroll_entrada_izq{
+  position: relative;
+  left: -150px;
+  transition: 1s;
+  opacity: 0;
+}
+
+.efecto_scroll_entrada_drh{
+  position: relative;
+  left: 150px;
+  transition: 1s;
+  opacity: 0;
+}
+
+.efecto_scroll_entrada_arb{
+  position: relative;
+  top: -150px;
+  transition: 1s;
+  opacity: 0;
+}
+
+.efecto_scroll_entrada_abj{
+  position: relative;
+  top: 75px;
+  transition: 1s;
+  opacity: 0;
+}
+
+.efecto_scroll_entrada_opacidad{
+  transition: 1.5s;
+  opacity: 0;
+}
+
+.active_ent{
+  left: 0;
+  top: 0;
+  opacity: 1;
+}
+
+.delay{
+  transition-delay: .25s;
+}
+/* ------- */
+/*----------------------------*/

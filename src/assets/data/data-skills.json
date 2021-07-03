@@ -1,0 +1,101 @@
+{
+  "habilidades":[{
+    "habilidad": "HTML",
+    "porcent_habilidad": 90,
+    "info": "",
+    "logo": "#",
+    "grupo": ["todos", "favoritos"]
+  },
+  {
+    "habilidad": "CSS3",
+    "porcent_habilidad": 80,
+    "info": "",
+    "logo": "#",
+    "grupo": ["todos", "favoritos"]
+  },{
+    "habilidad": "JavaScript",
+    "porcent_habilidad": 80,
+    "info": "",
+    "logo": "#",
+    "grupo": ["todos", "favoritos"]
+  },{
+    "habilidad": "TypeScript",
+    "porcent_habilidad": 80,
+    "info": "",
+    "logo": "#",
+    "grupo": ["todos", "favoritos"]
+  },{
+    "habilidad": "Angular",
+    "porcent_habilidad": 70,
+    "info": "",
+    "logo": "#",
+    "grupo": ["todos", "favoritos"]
+  },{
+    "habilidad": "Vue.js",
+    "porcent_habilidad": 50,
+    "info": "",
+    "logo": "#",
+    "grupo": ["todos", "favoritos"]
+  },{
+    "habilidad": "Node.js",
+    "porcent_habilidad": 35,
+    "info": "",
+    "logo": "#",
+    "grupo": ["todos"]
+  },{
+    "habilidad": "GIT",
+    "porcent_habilidad": 80,
+    "info": "",
+    "logo": "#",
+    "grupo": ["todos", "favoritos"]
+  },{
+    "habilidad": "VB.NET(MVC)",
+    "porcent_habilidad": 50,
+    "info": "",
+    "logo": "#",
+    "grupo": ["todos"]
+  },{
+    "habilidad": "VB.NET(Web Forms)",
+    "porcent_habilidad": 50,
+    "info": "",
+    "logo": "#",
+    "grupo": ["todos"]
+  },{
+    "habilidad": "C#",
+    "porcent_habilidad": 40,
+    "info": "",
+    "logo": "#",
+    "grupo": ["todos"]
+  },{
+    "habilidad": "Java",
+    "porcent_habilidad": 40,
+    "info": "",
+    "logo": "#",
+    "grupo": ["todos"]
+  },{
+    "habilidad": "Spring",
+    "porcent_habilidad": 30,
+    "info": "",
+    "logo": "#",
+    "grupo": ["todos"]
+  },{
+    "habilidad": "PHP",
+    "porcent_habilidad": 40,
+    "info": "",
+    "logo": "#",
+    "grupo": ["todos"]
+  },{
+    "habilidad": "Python",
+    "porcent_habilidad": 20,
+    "info": "",
+    "logo": "#",
+    "grupo": ["todos", "favoritos"]
+  },{
+    "habilidad": "COBOL y JCL",
+    "porcent_habilidad": 20,
+    "info": "",
+    "logo": "#",
+    "grupo": ["todos"]
+  }]
+}
+

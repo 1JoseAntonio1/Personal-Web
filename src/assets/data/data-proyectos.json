@@ -1,0 +1,22 @@
+{
+  "proyectos":[
+    {
+      "nombre": "HTML",
+      "info": "",
+      "imagen": "#",
+      "tecnologias": ["HTML5","CSS3","JavaScript","TypeScript","Angular"]
+    },
+    {
+      "nombre": "HHHH",
+      "info": "",
+      "imagen": "#",
+      "tecnologias": ["HTML5","CSS3","JavaScript","TypeScript","Angular"]
+    },
+    {
+      "nombre": "HHHH",
+      "info": "",
+      "imagen": "#",
+      "tecnologias": ["HTML5","CSS3","JavaScript","TypeScript","Angular"]
+    }
+  ]
+}

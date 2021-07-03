@@ -1,0 +1,44 @@
+<div class="section" id="habilidades">
+  <div class="contenedor">
+    <div class="titulo_habilidades">
+      <h1 class="efecto_scroll_titulo">Habilidades</h1>
+    </div>
+    <div class="filtro_habilidades">
+      <div class="efecto_scroll_entrada_izq buscar_habilidades">
+        <input type="text" #termino (keyup)="buscar_habilidad(grupo.value, termino.value)" placeholder="Buscar Habilidad">
+      </div>
+      <div class="efecto_scroll_entrada_drh grupo_habilidades">
+        <select name="select" #grupo (change)="buscar_habilidad(grupo.value, termino.value)">
+          <option value="todos" selected>Todos</option>
+          <!-- <option value="tresmeses">Usado ultimos 3 meses</option>
+          <option value="seismeses">Usado ultimos 6 meses</option>
+          <option value="docemeses">Usado ultimo año</option>
+          <option value="masmeses">Usado hace mas de un año</option> -->
+          <option value="favoritos">Favoritos</option>
+        </select>
+      </div>
+    </div>
+    <div>
+      <div class="skills_habilidades efecto_scroll_entrada_izq">
+        <div class="skill" *ngFor="let habilidad of infoHabilidades | paginate: {itemsPerPage: 5, currentPage: paginaActual}">
+          <span class="skill_nombre">{{habilidad.habilidad}}</span>
+          <div class="skill_percent">
+            <div class="skill_progreso" style="width:{{habilidad.porcent_habilidad}}%;"></div>
+          </div>
+          <span class="skill_valor">{{habilidad.porcent_habilidad}}%</span>
+        </div>
+      </div>
+      <div class="skills_paginacion efecto_scroll_entrada_drh">
+        <pagination-controls class="my-pagination"
+          (pageChange)="paginaActual = $event"
+          responsive="false"
+          previousLabel="Anterior"
+          nextLabel="Siguiente">
+      </pagination-controls>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="relleno"></div>

@@ -1,0 +1,43 @@
+<div class="section" id="contactame">
+  <div class="contenedor contactame">
+    <div class="contactame_titulo">
+      <h1 class="efecto_scroll_titulo">Contactame</h1>
+    </div>
+    <div class="contactame_info">
+      <form action=""  [formGroup]="contactForm" (ngSubmit)="guardar()">
+        <div class="row100">
+          <div class="col efecto_scroll_entrada_izq">
+            <div class="inputBox">
+              <input type="text" formControlName="nombre_form" required>
+              <span class="text">Nombre <span *ngIf="nombreNoValido" class="error_form error_texto">*Nombre Invalido</span></span>
+              <span class="line"></span>
+            </div>
+          </div>
+          <div class="col efecto_scroll_entrada_drh">
+            <div class="inputBox">
+              <input type="text" formControlName="email_form" required>
+              <span class="text">Email <span *ngIf="emailNoValido" class="error_form error_texto">*Email Invalido</span></span>
+              <span class="line"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row100">
+          <div class="col efecto_scroll_entrada_abj">
+            <div class="inputBox textarea">
+              <textarea formControlName="texto_form" required></textarea>
+              <span class="text">Pon tu mensaje Aqui... <span *ngIf="textoNoValido" class="error_form error_texto">*Texto Invalido</span></span>
+              <span class="line"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row100">
+          <div class="col enviar efecto_scroll_entrada_opacidad ">
+            <input type="submit" value="Enviar Mensaje">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
